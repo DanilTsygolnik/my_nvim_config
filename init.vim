@@ -63,6 +63,8 @@ call plug#begin()
     nmap <C-t> :NERDTreeToggle<CR>
     Plug 'https://github.com/ryanoasis/vim-devicons'  " Icons for filetree
     Plug 'https://github.com/kien/ctrlp.vim'  " Dirs search with <C-P>
+    Plug 'https://github.com/mileszs/ack.vim'  " Recursively search for a pattern inside files
+    let g:ackprg = 'ag --vimgrep'
 
     " Text editing improvements
     Plug 'https://github.com/jiangmiao/auto-pairs'  " Autocomplete symbols pairs (e.g. brackets)
