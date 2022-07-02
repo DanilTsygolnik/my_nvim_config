@@ -1,6 +1,9 @@
 set encoding=utf-8  " File encoding for writing
 set fileencodings=utf-8,cp1251,utf-16le  " File encodings for reading
 
+" Automatically save and load Vim folds
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
 
 " Interface settings
 set number
@@ -71,6 +74,10 @@ call plug#begin()
     Plug 'hrsh7th/cmp-nvim-lsp'
     Plug 'saadparwaiz1/cmp_luasnip'
     Plug 'L3MON4D3/LuaSnip'
+
+    " Git integration
+    Plug 'https://github.com/airblade/vim-gitgutter'  " Shows changes since last commit in a side column
+    Plug 'https://github.com/tpope/vim-fugitive'  " Use git commands from Vim cmd
 
 call plug#end()
 
