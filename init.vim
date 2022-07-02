@@ -61,4 +61,8 @@ call plug#begin()
     Plug 'https://github.com/ryanoasis/vim-devicons'  " Icons for filetree
     Plug 'https://github.com/kien/ctrlp.vim'  " Dirs search with <C-P>
 
+    " Text editing improvements
+    Plug 'https://github.com/jiangmiao/auto-pairs'  " Autocomplete symbols pairs (e.g. brackets)
+    Plug 'https://github.com/tpope/vim-surround'  " surround lines with patterns
+
 call plug#end()
