@@ -49,3 +49,16 @@ source ~/.local/share/nvim/colors/custom-dark.vim
 let @u = 'di ["](+)l'
 " make quotes in md-files using URL from "+ buffer
 let @q = "da[^pa]y%G0o\": \+%"
+
+
+" Plugins
+call plug#begin()
+
+    " Interface improvements
+    Plug 'https://github.com/vim-airline/vim-airline'  " Airline
+    Plug 'https://github.com/preservim/nerdtree'  " Filetree sidebar
+    nmap <C-t> :NERDTreeToggle<CR>
+    Plug 'https://github.com/ryanoasis/vim-devicons'  " Icons for filetree
+    Plug 'https://github.com/kien/ctrlp.vim'  " Dirs search with <C-P>
+
+call plug#end()
