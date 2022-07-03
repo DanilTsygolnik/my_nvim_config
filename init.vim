@@ -54,8 +54,7 @@ let @q = "da[^pa]y%G0o\": \+%"
 call plug#begin()
 
     " Manually installed plugins
-    set runtimepath^=~/.local/share/nvim/plugged/restore_views  " Save and restore Vim views automatically
-    "set runtimepath^=~/.local/share/nvim/plugged/restore_views/restore_views.vim  " Save and restore Vim views automatically
+    Plug 'https://github.com/vim-scripts/restore_view.vim'  " Save and restore Vim views automatically
     set viewoptions=cursor,folds,slash,unix
 
     " Interface improvements
