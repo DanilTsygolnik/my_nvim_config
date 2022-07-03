@@ -53,6 +53,11 @@ let @q = "da[^pa]y%G0o\": \+%"
 " Plugins
 call plug#begin()
 
+    " Manually installed plugins
+    set runtimepath^=~/.local/share/nvim/plugged/restore_views  " Save and restore Vim views automatically
+    "set runtimepath^=~/.local/share/nvim/plugged/restore_views/restore_views.vim  " Save and restore Vim views automatically
+    set viewoptions=cursor,folds,slash,unix
+
     " Interface improvements
     Plug 'https://github.com/vim-airline/vim-airline'  " Airline
     Plug 'https://github.com/preservim/nerdtree'  " Filetree sidebar
