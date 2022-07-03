@@ -1,10 +1,6 @@
 set encoding=utf-8  " File encoding for writing
 set fileencodings=utf-8,cp1251,utf-16le  " File encodings for reading
 
-" Automatically save and load Vim folds
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview
-
 " Interface settings
 set number
 set scrolloff=7
