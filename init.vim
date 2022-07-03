@@ -54,6 +54,10 @@ let @q = "da[^pa]y%G0o\": \+%"
 " Plugins
 call plug#begin()
 
+    " Manually installed plugins
+    Plug 'https://github.com/vim-scripts/restore_view.vim'  " Save and restore Vim views automatically
+    set viewoptions=cursor,folds,slash,unix
+
     " Interface improvements
     Plug 'https://github.com/vim-airline/vim-airline'  " Airline
     Plug 'https://github.com/preservim/nerdtree'  " Filetree sidebar
