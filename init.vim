@@ -72,6 +72,10 @@ call plug#begin()
     Plug 'saadparwaiz1/cmp_luasnip'
     Plug 'L3MON4D3/LuaSnip'
 
+    " Git integration
+    Plug 'https://github.com/airblade/vim-gitgutter'  " Show changes since the last commit in a side column
+    Plug 'https://github.com/tpope/vim-fugitive'  " Use git commands from Vim cmd
+
 call plug#end()
 
 
