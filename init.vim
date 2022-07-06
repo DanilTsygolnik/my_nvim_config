@@ -53,6 +53,11 @@ let @q = "da[^pa]y%G0o\": \+%"
 let @w = "di[[\+|\"]]l"
 
 
+" Commands
+" Put a note in " register using path to % file
+command RefNote execute "normal! i(см. [заметку](\<C-R>=expand('%:p')\<CR>))\<Esc>d%"
+
+
 " Plugins
 call plug#begin()
 
