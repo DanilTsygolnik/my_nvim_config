@@ -77,6 +77,7 @@ call plug#begin()
     " Text editing improvements
     Plug 'https://github.com/jiangmiao/auto-pairs'  " Autocomplete symbols pairs (e.g. brackets)
     Plug 'https://github.com/tpope/vim-surround'  " surround lines with patterns
+    Plug 'https://github.com/mattn/emmet-vim'  " Fast HTML blocks insertions with Emmet plugin
 
     " IDE features
     Plug 'neovim/nvim-lspconfig'
