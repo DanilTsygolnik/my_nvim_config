@@ -77,6 +77,9 @@ call plug#begin()
     " Text editing improvements
     Plug 'https://github.com/jiangmiao/auto-pairs'  " Autocomplete symbols pairs (e.g. brackets)
     Plug 'https://github.com/tpope/vim-surround'  " surround lines with patterns
+    let b:surround_{char2nr('i')} = "_\r_"
+    let b:surround_{char2nr('b')} = "**\r**"
+    let b:surround_{char2nr('c')} = "```\r```"
     Plug 'https://github.com/mattn/emmet-vim'  " Fast HTML blocks insertions with Emmet plugin
 
     " IDE features
