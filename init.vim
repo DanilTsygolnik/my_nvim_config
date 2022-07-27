@@ -53,9 +53,17 @@ let @q = "da[^pa]y%G0o\": \+%"
 let @w = "di[[\+|\"]]l"
 
 
-" Commands
-" Put a note in " register using path to % file
-command RefNote execute "normal! i(см. [заметку](\<C-R>=expand('%:p')\<CR>))\<Esc>d%"
+" ------------------------------------------------------------------------------
+"                                Commands
+" ------------------------------------------------------------------------------
+
+let configs_dir_path = "~/.config/nvim/"
+let commands_config = expand(configs_dir_path . "commands.vim")
+
+" Call on commands from an external file
+if filereadable(commands_config)
+  exec "source " . commands_config
+endif
 
 
 " Plugins
