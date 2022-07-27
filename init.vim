@@ -57,6 +57,18 @@ if filereadable(commands_config)
 endif
 
 " ------------------------------------------------------------------------------
+"                                Functions 
+" ------------------------------------------------------------------------------
+
+let functions_config = expand(configs_dir_path . "functions.vim")
+
+" Call on functions from an external file
+if filereadable(functions_config)
+  exec "source " . functions_config
+endif
+
+
+" ------------------------------------------------------------------------------
 "                                  Macros
 " ------------------------------------------------------------------------------
 
