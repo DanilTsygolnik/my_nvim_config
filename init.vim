@@ -44,15 +44,6 @@ nmap <C-h> :nohlsearch<CR>  " turn off search highlight
 source ~/.local/share/nvim/colors/custom-dark.vim
 
 
-" Macros
-" make links in md-files using URL from "+ buffer
-let @u = 'di ["](+)l'
-" make quotes in md-files using URL from "+ buffer
-let @q = "da[^pa]y%G0o\": \+%"
-" make Obsidian wiki link from selection (Visual Mode) using path in "+
-let @w = "di[[\+|\"]]l"
-
-
 " ------------------------------------------------------------------------------
 "                                Commands
 " ------------------------------------------------------------------------------
@@ -64,6 +55,18 @@ let commands_config = expand(configs_dir_path . "commands.vim")
 if filereadable(commands_config)
   exec "source " . commands_config
 endif
+
+" ------------------------------------------------------------------------------
+"                                  Macros
+" ------------------------------------------------------------------------------
+
+let macros_config = expand(configs_dir_path . "macros.vim")
+
+" Call on macros from an external file
+if filereadable(macros_config)
+  exec "source " . macros_config
+endif
+
 
 
 " Plugins
