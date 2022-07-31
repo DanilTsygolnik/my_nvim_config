@@ -48,6 +48,10 @@ set imsearch=0 " Чтобы при старте поиск был на англ�
 inoremap <C-l> <C-^>
 " Turn off search result highlight
 nmap <C-h> :nohlsearch<CR>  " turn off search highlight
+" Replace spaces with underscores in visual block
+xnoremap m_ :s/\%V /_/g<CR> :nohlsearch<CR>
+" Replace spaces with hyphens in visual block
+xnoremap m- :s/\%V /-/g<CR> :nohlsearch<CR>
 
 " ------------------------------------------------------------------------------
 "                                Commands
