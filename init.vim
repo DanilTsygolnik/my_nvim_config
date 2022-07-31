@@ -53,7 +53,7 @@ xnoremap m_ :s/\%V /_/g<CR> :nohlsearch<CR> g``
 " Replace spaces with hyphens in visual block
 xnoremap m- :s/\%V /-/g<CR> :nohlsearch<CR> g``
 " Make a markdown quote using clipboard content
-xnoremap mq d :call MakeMdQuote()<CR>
+xnoremap mq d:call MakeMdQuote()<CR>
 
 " ------------------------------------------------------------------------------
 "                                Commands
