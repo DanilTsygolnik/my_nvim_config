@@ -9,14 +9,6 @@ set mouse=a
 set splitright
 set splitbelow
 
-" Keyboard settings
-" Назначаем русские буквы соотв. кнопкам английской раскладки
-set keymap=russian-jcukenwin
-set iminsert=0 " Чтобы при старте ввод был на английском, а не русском (start > i)
-set imsearch=0 " Чтобы при старте поиск был на английском, а не русском (start > /)
-" Кастомный hotkey для переключения раскладок
-inoremap <C-l> <C-^>
-
 
 " Text editing settings
 
@@ -37,12 +29,25 @@ let g:markdown_fenced_languages = ['vim', 'bash', 'html', 'python', 'c']
 " Pattern search improvements
 set ignorecase
 set hlsearch
-nmap <C-h> :nohlsearch<CR>  " turn off search highlight
 
 
 " Color scheme
 source ~/.local/share/nvim/colors/custom-dark.vim
 
+" ------------------------------------------------------------------------------
+"                                Mappings 
+" ------------------------------------------------------------------------------
+
+" Keyboard settings
+" Назначаем русские буквы соотв. кнопкам английской раскладки
+set keymap=russian-jcukenwin
+set iminsert=0 " Чтобы при старте ввод был на английском, а не русском (start > i)
+set imsearch=0 " Чтобы при старте поиск был на английском, а не русском (start > /)
+
+" Кастомный hotkey для переключения раскладок
+inoremap <C-l> <C-^>
+" Turn off search result highlight
+nmap <C-h> :nohlsearch<CR>  " turn off search highlight
 
 " ------------------------------------------------------------------------------
 "                                Commands
