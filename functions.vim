@@ -1,6 +1,6 @@
 function! MakeMdQuote()
     let quote_templ = substitute(@", " ", "-", "g")
-    let quote_name = "^[" . tolower(quote_templ) . "]"
+    let quote_name = "[^" . tolower(quote_templ) . "]"
     " Write a quote name into the unnamed register
     let @" = quote_name
     " Paste the quote name at cursor position (i.e. replace visual block)
