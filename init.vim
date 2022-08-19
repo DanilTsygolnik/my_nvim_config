@@ -24,7 +24,7 @@ set fileformat=unix
 filetype indent on " explanation https://vi.stackexchange.com/a/10125
 
 syntax on
-let g:markdown_fenced_languages = ['vim', 'bash', 'html', 'python', 'c']
+let g:markdown_fenced_languages = ['vim', 'bash', 'html', 'python', 'c', 'julia']
 
 " Pattern search improvements
 set ignorecase
@@ -122,6 +122,7 @@ call plug#begin()
     Plug 'hrsh7th/cmp-nvim-lsp'
     Plug 'saadparwaiz1/cmp_luasnip'
     Plug 'L3MON4D3/LuaSnip'
+    Plug 'JuliaEditorSupport/julia-vim'
 
     " Git integration
     Plug 'https://github.com/airblade/vim-gitgutter'  " Show changes since the last commit in a side column
