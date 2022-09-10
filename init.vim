@@ -123,6 +123,7 @@ call plug#begin()
     Plug 'saadparwaiz1/cmp_luasnip'
     Plug 'L3MON4D3/LuaSnip'
     Plug 'JuliaEditorSupport/julia-vim'
+    Plug 'ionide/Ionide-vim'
 
     " Git integration
     Plug 'https://github.com/airblade/vim-gitgutter'  " Show changes since the last commit in a side column
