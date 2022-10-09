@@ -84,7 +84,9 @@
 ## Использованные материалы
 
 Выражение `:s#...` и regex:
-- sub-expressions -- см. доки vim, команда `:help E51` 
+1. sub-expressions -- см. доки vim, команда `:help E51`.
+2. описание строки-замены паттерна с помощью вложенных выражение (динамическое генерирование (?) строки-замены) -- см. доки vim, команда `:help sub-replace-expression`.
+    - функция `submatch()`-- см. доки vim, команда `:help submatch`.
 
 Объявление функций и команд, принимающих аргументы:
 - code style: названия пользовательских команд и функций начинаются строго (!) с заглавной буквы -- доки vim, команда `:help user-commands`
@@ -93,9 +95,6 @@
 
 
 
-
-Выражение `:s#...` и regex:
-`:help sub-replace-expression*`
 
 [^vimsript-cheatsheet]: https://devhints.io/vimscript
 [^learn-vim-hard-way-varargs]: https://learnvimscriptthehardway.stevelosh.com/chapters/24.html
