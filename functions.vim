@@ -38,3 +38,17 @@ function! WatsonLogRemarksFunc(...)
         endfor
     endif
 endfunction
+
+
+function! WatsonLogCommitsFunc(...)
+    let no_args = (a:0 == 0)
+    let expr_edit_watson_log = 's#.*\(..:..\) to \(..:..\) *\([0-9].*[0-9]s\).*\(\[.*\)$#\="* ".submatch(1)."-".submatch(2)." (".submatch(3).") ".submatch(4)."\r\r  Сделано:\r  - ...\r  ".repeat("-",(strchars("* ".submatch(1)."-".submatch(2)." (".submatch(3).") ".submatch(4)) - 2))."\r\r  Коммиты ...\r"#g'
+    if no_args
+        execute(':%' . expr_edit_watson_log)
+    else
+        let string_ranges = a:000
+        for range in string_ranges
+            execute(':' . range . expr_edit_watson_log)
+        endfor
+    endif
+endfunction
