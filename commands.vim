@@ -7,3 +7,4 @@ command! RefCommit let @" = "([commit](" . @+ . "))" | normal! p
 " Format all 'watson log' command output blocks present inside current buffer
 command! -nargs=* WatsonLogShort call WatsonLogShortFunc(<f-args>)
 command! -nargs=* WatsonLogRemarks call WatsonLogRemarksFunc(<f-args>)
+command! -nargs=* WatsonLogCommits call WatsonLogCommitsFunc(<f-args>)
