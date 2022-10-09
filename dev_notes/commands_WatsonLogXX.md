@@ -70,3 +70,20 @@
   Коммиты ...
 
 ```
+
+
+## Использованные материалы
+
+Выражение `:s#...` и regex:
+- sub-expressions -- см. доки vim, команда `:help E51` 
+
+Объявление функций и команд, принимающих аргументы:
+- code style: названия пользовательских команд и функций начинаются строго (!) с заглавной буквы -- доки vim, команда `:help user-commands`
+- раздел "Varargs" (очень пригодилось при написании функций) [^learn-vim-hard-way-varargs]
+- раздел "Commands with arguments" [^vimsript-cheatsheet]
+
+
+
+
+[^vimsript-cheatsheet]: https://devhints.io/vimscript
+[^learn-vim-hard-way-varargs]: https://learnvimscriptthehardway.stevelosh.com/chapters/24.html
