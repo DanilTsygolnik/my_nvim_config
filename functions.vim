@@ -14,7 +14,7 @@ endfunction
 
 function! WatsonLogShortFunc(...)
     let no_args = (a:0 == 0)
-    let expr_edit_watson_log = 's#.*\(..:..\) to \(..:..\) *\([0-9].*s\).*\(\[.*\)$#* \1-\2 (\3) \4#g'
+    let expr_edit_watson_log = 's#.*\(..:..\) to \(..:..\) *\([0-9].*[0-9]s\).*\(\[.*\)$#* \1-\2 (\3) \4#g'
     if no_args
         execute(':%' . expr_edit_watson_log)
     else
