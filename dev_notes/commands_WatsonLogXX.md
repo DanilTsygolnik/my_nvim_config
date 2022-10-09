@@ -3,7 +3,8 @@
 Команда `watson log -d` выводит лог следующего вида
 ```
 	73dbe2a  09:15 to 11:19   2h 04m 12s  Gitea  [Work]
-	16ad7a8  12:31 to 14:12   1h 41m 14s  Gitea  [Work, DevTools]
+	2075079  09:50 to 10:10      19m 40s         Routines  [Common]
+	a40bbde  12:38 to 12:45          33s       Notetaking  [Reports]
 ```
 
 Задача: приводить все подобные текстовые блоки к более подходящему для ежедневных отчётов виду.
@@ -20,7 +21,8 @@
 Написать команду для vim `WatsonLogShort`, которая будет приводить вставленные в заметку логи к виду:
 ```
 * 09:15-11:19 (2h 04m 12s) [Work]
-* 12:31-14:12 (1h 41m 14s) [Work, DevTools]
+* 09:50-10:10 (19m 40s) [Common]
+* 12:38-12:45 (33s) [Reports]
 ```
 
 
@@ -84,6 +86,9 @@
 
 
 
+
+Выражение `:s#...` и regex:
+`:help sub-replace-expression*`
 
 [^vimsript-cheatsheet]: https://devhints.io/vimscript
 [^learn-vim-hard-way-varargs]: https://learnvimscriptthehardway.stevelosh.com/chapters/24.html
