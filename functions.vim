@@ -10,3 +10,17 @@ function! MakeMdQuote()
     " Paste the full quote at the end of the note and jump back to quote name position
     normal! Gop
 endfunction
+
+
+function! WatsonLogShortFunc(...)
+    let no_args = (a:0 == 0)
+    let expr_edit_watson_log = 's#.*\(..:..\) to \(..:..\) *\(.*h.*m.*s\).*\(\[.*\)$#* \1-\2 (\3) \4#g'
+    if no_args
+        execute(':%' . expr_edit_watson_log)
+    else
+        let string_ranges = a:000
+        for range in string_ranges
+            execute(':' . range . expr_edit_watson_log)
+        endfor
+    endif
+endfunction
