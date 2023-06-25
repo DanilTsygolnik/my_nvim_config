@@ -66,6 +66,18 @@ ab oC °С
 " "oC" in Russian 
 ab оС °С
 
+" HTML entity representing 'cross' symbol 
+ab &x &cross;
+" HTML entity representing 'checkmark' symbol 
+ab &+ &check;
+" HTML entity representing En dash (shorter dash)
+" It is commonly used to indicate a range or connection between two items.
+ab n- &ndash;
+" HTML entity representing Em dash (long dash)
+" It is typically used to indicate a break in a sentence or to set off parenthetical.
+" phrases.
+ab m- &mdash;
+
 
 " ------------------------------------------------------------------------------
 "                                Commands
